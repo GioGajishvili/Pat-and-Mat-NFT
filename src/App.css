@@ -1,38 +1,265 @@
-.App {
-  text-align: center;
+body {
+  background: linear-gradient(
+    136deg,
+    #290028f8 36%,
+    rgba(122, 13, 119, 0) 160%
+  );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.opensea-button {
+  height: 57px;
+  width: 237px;
+  border-radius: 13px;
+  background: linear-gradient(
+    180deg,
+    #e728e1 0%,
+    rgba(119, 42, 117, 0) 145.12%
+  );
+  box-shadow: 0px 4px 4px 0px #00000040;
+  outline: none;
+  border: none;
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  font-size: 38px;
+  color: #ffffff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.menu-link {
+  margin-right: 30px;
+  font-family: Cambo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.left-section {
+  flex: 0.55;
+  height: 700px;
+}
+.left-section h1 {
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 120px;
+  color: #ffffff;
+}
+.left-section h1 mark {
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 120px;
+  background: -webkit-linear-gradient(
+    #ff35ff 0%,
+    rgba(245, 46, 245, 0.822917) 54.69%,
+    rgba(199, 11, 199, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.left-section p {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #a6a6a6;
+}
+.button-container {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.explore-now {
+  padding: 5px 40px;
+  box-sizing: border-box;
+  border-radius: 13px;
+  outline: none;
+  border: none;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  background: linear-gradient(
+    180deg,
+    #c70bc7 0%,
+    rgba(199, 11, 199, 0.625) 66.15%,
+    rgba(75, 8, 83, 0.548) 100%
+  );
+  color: #ffffff;
+}
+.buy {
+  margin-left: 40px;
+  padding: 5px 70px;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 13px;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  outline: none;
+  border: solid 1px white;
+  background: transparent;
   color: white;
+  line-height: 43px;
+}
+.right-section {
+  flex: 0.45;
+  background-color: #ff00f5;
+  height: 700px;
+}
+.social-logo {
+  margin-right: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.pmlogo {
+  margin-top: 95px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.week-artworks {
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 120px;
+  color: #ffffff;
+}
+
+.artworks-container {
+  color: black;
+}
+
+.textview-artworks {
+  margin-top: 90px;
+  margin-bottom: 50px;
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 120px;
+  color: #ffffff;
+}
+
+.artwork-container {
+  background-color: #241b2b;
+  height: 463px;
+  margin-bottom: 30px;
+}
+
+.nft-artwork {
+  padding: 21px 21px 16px 21px;
+}
+
+.nft-name {
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  color: #ffffff;
+  margin-left: 30px;
+}
+
+.bottom-nft {
+  margin-top: 30px;
+}
+
+.about-title {
+  margin-top: 20px;
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 120px;
+  color: #ffffff;
+}
+
+.paragraph {
+  margin-top: 50px;
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.team-title {
+  margin-top: 50px;
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 120px;
+  color: #ffffff;
+}
+
+.team-founder {
+  flex: 0.5;
+}
+
+.team-container {
+  display: flex;
+  flex: 1;
+  height: 500px;
+}
+
+.gio-gajishvili {
+  margin-left: 130px;
+}
+
+.guram-kveniashvili {
+  margin-left: 200px;
+}
+
+.textview-team {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 120px;
+  color: #ffffff;
+}
+
+.questions {
+  font-family: "CantoraOne";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.faq {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  font-family: CantoraOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 120px;
+  color: #ffffff;
+}
+
+.questions > li {
+  margin-bottom: 70px;
+}
+
+.test {
+  margin-bottom: 500px;
 }
