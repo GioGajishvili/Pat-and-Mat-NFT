@@ -15,11 +15,19 @@ function App() {
             <img className="pmlogo" src={Logo}></img>
           </div>
           <div>
-            <a className="menu-link">About</a>
-            <a className="menu-link">Team</a>
-            <a className="menu-link">FAQ</a>
+            <a href="#about-container" className="menu-link">
+              About
+            </a>
+            <a href="#team-container" className="menu-link">
+              Team
+            </a>
+            <a href="#faq-container" className="menu-link">
+              FAQ
+            </a>
           </div>
-          <button className="opensea-button">Opensea</button>
+          <a href="https://opensea.io/collection/patandmat" target="_blank">
+            <button className="opensea-button">Opensea</button>
+          </a>
         </div>
       </header>
       <section className="container d-flex flex-1">
@@ -29,8 +37,9 @@ function App() {
           </h1>
           <p className="slogan">New Project with big future!</p>
           <div className="button-container">
-            <button className="explore-now">explore now</button>
-            <button className="buy">buy</button>
+            <a href="https://opensea.io/collection/patandmat" target="_blank">
+              <button className="buy">Buy</button>
+            </a>
           </div>
           <div className="social-media-container mt-5">
             <a href="https://www.instagram.com/patandmatnft/" target="_blank">
@@ -89,7 +98,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div id="about-container" className="container">
         <h2 className="about-title">About</h2>
         <p className="paragraph">
           Inspiration of this collection was an animation from XX century Pat &
@@ -103,7 +112,7 @@ function App() {
         </p>
       </div>
 
-      <div className="container">
+      <div id="team-container" className="container">
         <h2 className="textview-team">Team</h2>
         <div className="row">
           <div className=" col-4 gio-gajishvili">
@@ -120,8 +129,7 @@ function App() {
           </div>
         </div>
       </div>
-
-      <div className="container test">
+      <div id="faq-container" className="container test">
         <h2 className="faq">FAQ</h2>
         <ul className="questions">
           <li>Why Pat and Mat in XXI century?</li>
