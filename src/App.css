@@ -14,29 +14,24 @@ body {
 }
 
 .opensea-button {
-  transition: box-shadow 0.7s ease-in-out, color 300ms ease-in-out;
-  height: 57px;
-  width: 237px;
+  transition: box-shadow 0.5s ease-in-out, color 300ms ease-in-out;
+  margin-bottom: 30px;
+  padding: 8px 45px;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 13px;
-  background: linear-gradient(
-    180deg,
-    #e728e1 0%,
-    rgba(119, 42, 117, 0) 145.12%
-  );
-  box-shadow: inset 0px 4px 4px 0px #00000040;
-  outline: none;
-  border: none;
-  font-family: CantoraOne;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 45px;
-  font-size: 38px;
-  color: #ffffff;
+  outline: none;
+  border: solid 1px white;
+  background: transparent;
+  color: white;
+  line-height: 43px;
 }
 
 .opensea-button:hover {
-  box-shadow: inset 0 40px 40px #d30e4f;
+  box-shadow: inset 0 40px 40px #860675;
 }
 
 .menu-link {
@@ -58,7 +53,6 @@ body {
   height: 700px;
 }
 .left-section h1 {
-  font-family: CantoraOne;
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
@@ -66,7 +60,6 @@ body {
   color: #ffffff;
 }
 .left-section h1 mark {
-  font-family: CantoraOne;
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
@@ -80,9 +73,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .left-section p {
-  margin-left: 20px;
-  margin-top: 10px;
-  font-family: CantoraOne;
+  margin-top: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -90,16 +81,16 @@ body {
   color: #a6a6a6;
 }
 .button-container {
-  margin-top: 100px;
-  margin-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
 .buy {
-  margin-bottom: 20px;
+  transition: box-shadow 0.5s ease-in-out, color 300ms ease-in-out;
+  margin-bottom: 30px;
   padding: 5px 70px;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 13px;
-  font-family: Bebas Neue;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -109,6 +100,11 @@ body {
   color: white;
   line-height: 43px;
 }
+
+.buy:hover {
+  box-shadow: inset 0 40px 40px #80056f;
+}
+
 .right-section {
   flex: 0.45;
   background-color: #ff00f5;
@@ -123,7 +119,6 @@ body {
 }
 
 .week-artworks {
-  font-family: CantoraOne;
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
@@ -138,7 +133,6 @@ body {
 .textview-artworks {
   margin-top: 90px;
   margin-bottom: 50px;
-  font-family: CantoraOne;
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
@@ -169,7 +163,6 @@ body {
 }
 
 .nft-name {
-  font-family: CantoraOne;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -184,7 +177,6 @@ body {
 
 .about-title {
   margin-top: 60px;
-  font-family: CantoraOne;
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
@@ -194,7 +186,6 @@ body {
 
 .paragraph {
   margin-top: 50px;
-  font-family: CantoraOne;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -204,7 +195,6 @@ body {
 
 .team-title {
   margin-top: 50px;
-  font-family: CantoraOne;
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
@@ -233,7 +223,6 @@ body {
 .textview-team {
   margin-top: 90px;
   margin-bottom: 90px;
-  font-family: CantoraOne;
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
@@ -242,18 +231,16 @@ body {
 }
 
 .questions {
-  font-family: "CantoraOne";
-  font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
   color: #ffffff;
+  padding-bottom: 300px;
 }
 
 .faq {
   margin-top: 60px;
   margin-bottom: 90px;
-  font-family: CantoraOne;
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
@@ -263,4 +250,49 @@ body {
 
 .questions > li {
   margin-bottom: 70px;
+}
+
+li.accordion {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 10px;
+}
+
+li.accordion:after {
+  content: "\25bc";
+  font-size: 54px;
+  color: rgb(255, 255, 255);
+  float: right;
+  margin-left: 5px;
+  transition: all 0.5s;
+}
+
+li.accordion.active:after {
+  content: "\25bc";
+  font-size: 54px;
+  color: rgb(255, 255, 255);
+  float: right;
+  margin-left: 5px;
+  transform: rotate(180deg);
+}
+
+div.panel {
+  font-size: smaller;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  margin-bottom: 10px;
+}
+
+div.panel.show {
+  opacity: 1.2;
+  max-height: 500px;
 }

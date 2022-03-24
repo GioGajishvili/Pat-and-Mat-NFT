@@ -6,7 +6,14 @@ import Twitter from "./twitter.svg";
 import Logo from "./pmlogo.svg";
 import Zuko from "./zuko.svg";
 
+// accordeon
+
 function App() {
+  const toggleAccordionClass = (event) => {
+    event.target.classList.toggle("active");
+    event.target.nextElementSibling.classList.toggle("show");
+  };
+
   return (
     <div className="main-container">
       <header className="header">
@@ -35,7 +42,7 @@ function App() {
           <h1>
             Pat and Mat in XXI century <mark>NFT</mark> collection
           </h1>
-          <p className="slogan">New Project with big future!</p>
+          <p className="slogan">New Project with big future !</p>
           <div className="button-container">
             <a href="https://opensea.io/collection/patandmat" target="_blank">
               <button className="buy">Buy</button>
@@ -132,10 +139,42 @@ function App() {
       <div id="faq-container" className="container test">
         <h2 className="faq">FAQ</h2>
         <ul className="questions">
-          <li>Why Pat and Mat in XXI century?</li>
-          <li>What will be utilitys?</li>
-          <li>Who are members of team?</li>
-          <li>What is your road map?</li>
+          <li className="accordion" onClick={toggleAccordionClass}>
+            Why Pat and Mat in XXI century ?
+          </li>
+          <div className="panel">
+            According to school lunch director, Marge Kaplan, 'the children are
+            making a big effort to think in a sensible way about the food they
+            put on their plates. We now have about 15% less waste and we think
+            this percentage will grow as more children join in the campaign.
+          </div>
+          <li className="accordion" onClick={toggleAccordionClass}>
+            What will be utilitys ?
+          </li>
+          <div className="panel">
+            According to school lunch director, Marge Kaplan, 'the children are
+            making a big effort to think in a sensible way about the food they
+            put on their plates. We now have about 15% less waste and we think
+            this percentage will grow as more children join in the campaign.
+          </div>
+          <li className="accordion" onClick={toggleAccordionClass}>
+            Who are members of team ?
+          </li>
+          <div className="panel">
+            According to school lunch director, Marge Kaplan, 'the children are
+            making a big effort to think in a sensible way about the food they
+            put on their plates. We now have about 15% less waste and we think
+            this percentage will grow as more children join in the campaign.
+          </div>
+          <li className="accordion" onClick={toggleAccordionClass}>
+            What is your road map ?
+          </li>
+          <div className="panel">
+            According to school lunch director, Marge Kaplan, 'the children are
+            making a big effort to think in a sensible way about the food they
+            put on their plates. We now have about 15% less waste and we think
+            this percentage will grow as more children join in the campaign.
+          </div>
         </ul>
       </div>
     </div>
