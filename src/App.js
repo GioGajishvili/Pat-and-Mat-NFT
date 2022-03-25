@@ -7,7 +7,6 @@ import Logo from "./pmlogo.svg";
 import Zuko from "./zuko.svg";
 
 // accordeon
-
 function App() {
   const toggleAccordionClass = (event) => {
     event.target.classList.toggle("active");
@@ -18,10 +17,10 @@ function App() {
     <div className="main-container">
       <header className="header">
         <div className="container d-flex align-items-center justify-content-between h-100 coordinate">
-          <div className>
+          <div className="logo">
             <img className="pmlogo" src={Logo}></img>
           </div>
-          <div>
+          <div className="header-left-section">
             <a href="#about-container" className="menu-link">
               About
             </a>
@@ -31,16 +30,17 @@ function App() {
             <a href="#faq-container" className="menu-link">
               FAQ
             </a>
+            <a href="https://opensea.io/collection/patandmat" target="_blank">
+              <button className="opensea-button">Opensea</button>
+            </a>
           </div>
-          <a href="https://opensea.io/collection/patandmat" target="_blank">
-            <button className="opensea-button">Opensea</button>
-          </a>
         </div>
       </header>
       <section className="container d-flex flex-1">
         <div className="left-section">
           <h1>
-            Pat and Mat in XXI century <mark>NFT</mark> collection
+            <mark className="patandmat-mark">Pat and Mat</mark> <br></br> in XXI
+            century <mark className="nft-mark">NFT</mark> collection
           </h1>
           <p className="slogan">New Project with big future !</p>
           <div className="button-container">

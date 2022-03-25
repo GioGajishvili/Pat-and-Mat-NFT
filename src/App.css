@@ -15,14 +15,14 @@ body {
 
 .opensea-button {
   transition: box-shadow 0.5s ease-in-out, color 300ms ease-in-out;
-  margin-bottom: 30px;
   padding: 8px 45px;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 13px;
   font-style: normal;
+  font-family: Fredoka One;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 20px;
   outline: none;
   border: solid 1px white;
   background: transparent;
@@ -36,16 +36,17 @@ body {
 
 .menu-link {
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 75px;
+  font-family: Fredoka One;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 27px;
   color: #ffffff;
 }
 
 .menu-link:hover {
-  color: #c0045c;
+  color: #c24680;
 }
 
 .left-section {
@@ -53,30 +54,50 @@ body {
   height: 700px;
 }
 .left-section h1 {
+  font-family: Jura;
   font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
+  font-weight: bold;
+  font-size: 90px;
   line-height: 120px;
   color: #ffffff;
 }
-.left-section h1 mark {
+
+.patandmat-mark {
+  padding: 0;
+  font-family: Jura;
   font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
+  font-weight: bold;
+  font-size: 90px;
   line-height: 120px;
   background: -webkit-linear-gradient(
-    #ff35ff 0%,
-    rgba(245, 46, 245, 0.822917) 54.69%,
-    rgba(199, 11, 199, 0) 100%
+    #f536a5 20%,
+    rgba(190, 39, 170, 0.897) 60%,
+    rgba(8, 5, 5, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nft-mark {
+  padding: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 120px;
+  background: -webkit-linear-gradient(
+    #ffffff 15%,
+    rgba(190, 112, 190, 0.823) 60%,
+    rgba(8, 5, 5, 0) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .left-section p {
   margin-top: 30px;
+  font-family: Jura;
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: bold;
+  font-size: 25px;
   line-height: 30px;
   color: #a6a6a6;
 }
@@ -84,6 +105,7 @@ body {
   margin-top: 60px;
   margin-bottom: 10px;
 }
+
 .buy {
   transition: box-shadow 0.5s ease-in-out, color 300ms ease-in-out;
   margin-bottom: 30px;
@@ -91,9 +113,10 @@ body {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 13px;
+  font-family: Fredoka One;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 25px;
   outline: none;
   border: solid 1px white;
   background: transparent;
@@ -133,9 +156,10 @@ body {
 .textview-artworks {
   margin-top: 90px;
   margin-bottom: 50px;
+  font-family: Jura;
   font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
+  font-weight: bold;
+  font-size: 70px;
   line-height: 120px;
   color: #ffffff;
 }
@@ -163,6 +187,7 @@ body {
 }
 
 .nft-name {
+  font-family: Jura;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -177,28 +202,21 @@ body {
 
 .about-title {
   margin-top: 60px;
+  font-family: Jura;
   font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
+  font-weight: bold;
+  font-size: 70px;
   line-height: 120px;
   color: #ffffff;
 }
 
 .paragraph {
   margin-top: 50px;
+  font-family: Jura;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 45px;
-  color: #ffffff;
-}
-
-.team-title {
-  margin-top: 50px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
-  line-height: 120px;
   color: #ffffff;
 }
 
@@ -223,9 +241,10 @@ body {
 .textview-team {
   margin-top: 90px;
   margin-bottom: 90px;
+  font-family: Jura;
   font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
+  font-weight: bold;
+  font-size: 70px;
   line-height: 120px;
   color: #ffffff;
 }
@@ -241,15 +260,19 @@ body {
 .faq {
   margin-top: 60px;
   margin-bottom: 90px;
+  font-family: Jura;
   font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
+  font-weight: bold;
+  font-size: 70px;
   line-height: 120px;
   color: #ffffff;
 }
 
 .questions > li {
   margin-bottom: 70px;
+  font-family: Jura;
+  font-style: normal;
+  font-weight: bold;
 }
 
 li.accordion {
@@ -283,7 +306,10 @@ li.accordion.active:after {
 }
 
 div.panel {
-  font-size: smaller;
+  font-family: Jura;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
