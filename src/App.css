@@ -57,7 +57,7 @@ body {
   font-family: Jura;
   font-style: normal;
   font-weight: bold;
-  font-size: 90px;
+  font-size: 70px;
   line-height: 120px;
   color: #ffffff;
 }
@@ -67,7 +67,7 @@ body {
   font-family: Jura;
   font-style: normal;
   font-weight: bold;
-  font-size: 90px;
+  font-size: 80px;
   line-height: 120px;
   background: -webkit-linear-gradient(
     #f536a5 20%,
@@ -82,7 +82,7 @@ body {
   padding: 0;
   font-style: normal;
   font-weight: bold;
-  font-size: 90px;
+  font-size: 85px;
   line-height: 120px;
   background: -webkit-linear-gradient(
     #ffffff 15%,
@@ -129,8 +129,8 @@ body {
 }
 
 .right-section {
+  max-width: 400px;
   flex: 0.45;
-  background-color: #ff00f5;
   height: 700px;
 }
 .social-logo {
@@ -321,4 +321,13 @@ div.panel {
 div.panel.show {
   opacity: 1.2;
   max-height: 500px;
+}
+
+.gallery-photo {
+  margin-top: 30px;
+}
+
+.image.wrap {
+  width: 500px;
+  height: 500px;
 }

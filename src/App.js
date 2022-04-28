@@ -5,6 +5,36 @@ import Instagram from "./instagram.svg";
 import Twitter from "./twitter.svg";
 import Logo from "./pmlogo.svg";
 import Zuko from "./zuko.svg";
+import Rambo from "./rambo.png";
+import Marley from "./marley.png";
+import Matman from "./matman.png";
+import HappyGuy from "./happyGuy.png";
+import Kurtanidze from "./kurtanidze.png";
+
+// SlideShow
+
+var imgArray = [
+  {
+    url: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/50826227598767720252728106686251813542327958622201116550483384654712413356033",
+    imgSrc: Marley,
+  },
+  {
+    url: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/50826227598767720252728106686251813542327958622201116550483384649214855217153",
+    imgSrc: Rambo,
+  },
+  {
+    url: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/50826227598767720252728106686251813542327958622201116550483384652513390100481",
+    imgSrc: Matman,
+  },
+  {
+    url: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/50826227598767720252728106686251813542327958622201116550483384633821692428289",
+    imgSrc: Kurtanidze,
+  },
+  {
+    url: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/50826227598767720252728106686251813542327958622201116550483384631622669172737",
+    imgSrc: HappyGuy,
+  },
+];
 
 // accordeon
 function App() {
@@ -39,8 +69,8 @@ function App() {
       <section className="container d-flex flex-1">
         <div className="left-section">
           <h1>
-            <mark className="patandmat-mark">Pat and Mat</mark> <br></br> in XXI
-            century <mark className="nft-mark">NFT</mark> collection
+            <mark className="patandmat-mark">Pat and Mat</mark> <br></br> In XXI
+            century <br></br> <mark className="nft-mark">NFT</mark> collection
           </h1>
           <p className="slogan">New Project with big future !</p>
           <div className="button-container">
@@ -60,9 +90,7 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="right-section">
-          <h1>aq iqneba galerea</h1>
-        </div>
+        <div className="right-section"></div>
       </section>
       <div className="container">
         <h2 className="textview-artworks">Artwork of the week</h2>
