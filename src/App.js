@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { Accordeon } from "./components/Accordeon/Accordeon";
+import { toggleAccordionClass } from "./components/Accordeon/Accordeon";
 import { imgArray } from "./components/Slider/DataSlider";
 
 import Discord from "./discord.svg";
@@ -23,7 +23,7 @@ function App(props) {
       <header className="header">
         <div className="container d-flex align-items-center justify-content-between h-100 coordinate">
           <div className="logo">
-            <img className="pmlogo"></img>
+            <img className="logo"></img>
           </div>
           <div className="header-left-section">
             <a href="#about-container" className="menu-link">
@@ -178,7 +178,7 @@ function App(props) {
       <div id="faq-container" className="container test">
         <h2 className="faq">FAQ</h2>
         <ul className="questions">
-          <li className="accordion" onClick={Accordeon}>
+          <li className="accordion" onClick={toggleAccordionClass}>
             Why Pat and Mat in XXI century ?
           </li>
           <div className="panel">
@@ -187,7 +187,7 @@ function App(props) {
             put on their plates. We now have about 15% less waste and we think
             this percentage will grow as more children join in the campaign.
           </div>
-          <li className="accordion" onClick={Accordeon}>
+          <li className="accordion" onClick={toggleAccordionClass}>
             What will be utilitys ?
           </li>
           <div className="panel">
@@ -196,7 +196,7 @@ function App(props) {
             put on their plates. We now have about 15% less waste and we think
             this percentage will grow as more children join in the campaign.
           </div>
-          <li className="accordion" onClick={Accordeon}>
+          <li className="accordion" onClick={toggleAccordionClass}>
             Who are members of team ?
           </li>
           <div className="panel">
@@ -205,7 +205,7 @@ function App(props) {
             put on their plates. We now have about 15% less waste and we think
             this percentage will grow as more children join in the campaign.
           </div>
-          <li className="accordion" onClick={Accordeon}>
+          <li className="accordion" onClick={toggleAccordionClass}>
             What is your road map ?
           </li>
           <div className="panel">
