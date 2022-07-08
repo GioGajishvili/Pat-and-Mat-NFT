@@ -1,21 +1,20 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import { toggleAccordionClass } from "./components/Accordeon/Accordeon";
-import { imgArray } from "./components/Slider/DataSlider";
-
 import Discord from "./discord.svg";
 import Instagram from "./instagram.svg";
 import Twitter from "./twitter.svg";
-import GoldenBoy from "./goldenBoy.png";
-import SilverBoy from "./silverBoy.png";
-import Zuko from "./zuko.png";
-import Rambo from "./rambo.png";
-import Marley from "./marley.png";
-import Matman from "./matman.png";
-import HappyGuy from "./happyGuy.png";
-import Kurtanidze from "./kurtanidze.png";
-import Soldier from "./soldier.png";
+import GoldenBoy from "./Components/Slider/PhotosNFT/img1.png";
+import SilverBoy from "./Components/Slider/PhotosNFT/silverBoy.png";
+import Zuko from "./Components/Slider/PhotosNFT/zuko.png";
+import Rambo from "./Components/Slider/PhotosNFT/rambo.png";
+import Marley from "./Components/Slider/PhotosNFT/marley.png";
+import Matman from "./Components/Slider/PhotosNFT/matman.png";
+import HappyGuy from "./Components/Slider/PhotosNFT/happyGuy.png";
+import Kurtanidze from "./Components/Slider/PhotosNFT/kurtanidze.png";
+import Soldier from "./Components/Slider/PhotosNFT/soldier.png";
+
+import { toggleAccordionClass } from "./Components/Accordeon/Accordeon";
+import Slideshow from "./Components/Slider/Slider";
 
 function App(props) {
   return (
@@ -67,8 +66,8 @@ function App(props) {
         </div>
         <div className="right-section">
           <div className="slideshow-container">
-            <div className="slideshow-container">
-              <img className="slideshow-photo" src={Soldier}></img>
+            <div className="slideshow-image">
+              <Slideshow />
             </div>
           </div>
         </div>
@@ -162,16 +161,23 @@ function App(props) {
         <h2 className="textview-team">Team</h2>
         <div className="row">
           <div className=" col-4 gio-gajishvili">
-            <div className="artwork-container">
-              <img className="nft-artwork" src={GoldenBoy}></img>
-              <spam className="nft-name">Giorgi Gajishvili</spam>
-            </div>
+            <a
+              href="https://www.instagram.com/giorgigajishvili/"
+              target="_blank"
+            >
+              <div className="artwork-container">
+                <img className="nft-artwork" src={GoldenBoy}></img>
+                <spam className="nft-name">Giorgi Gajishvili</spam>
+              </div>
+            </a>
           </div>
           <div className=" col-4 guram-kveniashvili">
-            <div className="artwork-container">
-              <img className="nft-artwork" src={SilverBoy}></img>
-              <spam className="nft-name">Guram Kveniashvili</spam>
-            </div>
+            <a href="https://www.instagram.com/kv3no/" target="_blank">
+              <div className="artwork-container">
+                <img className="nft-artwork" src={SilverBoy}></img>
+                <spam className="nft-name">Guram Kveniashvili</spam>
+              </div>
+            </a>
           </div>
         </div>
       </div>
