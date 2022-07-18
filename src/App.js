@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Discord from "./discord.svg";
 import Instagram from "./instagram.svg";
 import Twitter from "./twitter.svg";
-import GoldenBoy from "./Components/Slider/PhotosNFT/img1.png";
+import GoldenBoy from "./Components/Slider/PhotosNFT/goldenBoy.png";
 import SilverBoy from "./Components/Slider/PhotosNFT/silverBoy.png";
 import Zuko from "./Components/Slider/PhotosNFT/zuko.png";
 import Rambo from "./Components/Slider/PhotosNFT/rambo.png";
@@ -59,7 +59,7 @@ function App(props) {
             <a href="https://twitter.com/PatandMatNFT" target="_blank">
               <img className="social-logo" src={Twitter}></img>
             </a>
-            <a href="https://discord.gg/qfruAZDA" target="_blank">
+            <a href="https://discord.gg/cDPGvWJm" target="_blank">
               <img className="social-logo" src={Discord}></img>
             </a>
           </div>
