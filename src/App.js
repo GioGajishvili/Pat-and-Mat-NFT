@@ -21,9 +21,7 @@ function App(props) {
     <div className="main-container">
       <header className="header">
         <div className="container d-flex align-items-center justify-content-between h-100 coordinate">
-          <div className="logo">
-            <img className="logo"></img>
-          </div>
+          <div className="logo">PM</div>
           <div className="header-left-section">
             <a href="#about-container" className="menu-link">
               About
@@ -82,7 +80,7 @@ function App(props) {
             >
               <div className="artwork-container">
                 <img className="nft-artwork" src={Zuko}></img>
-                <spam className="nft-name">Mat - Zuko</spam>
+                <span className="nft-name">Mat - Zuko</span>
               </div>
             </a>
           </div>
@@ -93,7 +91,7 @@ function App(props) {
             >
               <div className="artwork-container">
                 <img className="nft-artwork" src={Marley}></img>
-                <spam className="nft-name">Mat - Marley</spam>
+                <span className="nft-name">Mat - Marley</span>
               </div>
             </a>
           </div>
@@ -104,7 +102,7 @@ function App(props) {
             >
               <div className="artwork-container">
                 <img className="nft-artwork" src={Rambo}></img>
-                <spam className="nft-name">Mat - Rambo</spam>
+                <span className="nft-name">Mat - Rambo</span>
               </div>
             </a>
           </div>
@@ -115,7 +113,7 @@ function App(props) {
             >
               <div className="artwork-container">
                 <img className="nft-artwork" src={Matman}></img>
-                <spam className="nft-name">Mat - Matman</spam>
+                <span className="nft-name">Mat - Matman</span>
               </div>
             </a>
           </div>
@@ -126,7 +124,7 @@ function App(props) {
             >
               <div className="artwork-container">
                 <img className="nft-artwork" src={Kurtanidze}></img>
-                <spam className="nft-name">Pat - Kurtanidze</spam>
+                <span className="nft-name">Pat - Kurtanidze</span>
               </div>
             </a>
           </div>
@@ -137,7 +135,7 @@ function App(props) {
             >
               <div className="artwork-container">
                 <img className="nft-artwork" src={HappyGuy}></img>
-                <spam className="nft-name">Mat - HappyGuy</spam>
+                <span className="nft-name">Mat - HappyGuy</span>
               </div>
             </a>
           </div>
@@ -167,7 +165,7 @@ function App(props) {
             >
               <div className="artwork-container">
                 <img className="nft-artwork" src={GoldenBoy}></img>
-                <spam className="nft-name">Giorgi Gajishvili</spam>
+                <span className="nft-name">Giorgi Gajishvili</span>
               </div>
             </a>
           </div>
@@ -175,7 +173,7 @@ function App(props) {
             <a href="https://www.instagram.com/kv3no/" target="_blank">
               <div className="artwork-container">
                 <img className="nft-artwork" src={SilverBoy}></img>
-                <spam className="nft-name">Guram Kveniashvili</spam>
+                <span className="nft-name">Guram Kveniashvili</span>
               </div>
             </a>
           </div>

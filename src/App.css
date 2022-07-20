@@ -18,6 +18,15 @@ u {
   margin-top: 50px;
 }
 
+.logo {
+  font-size: 90px;
+  font-family: "Black Ops One", cursive;
+  color: white;
+  cursor: default;
+  margin-left: 2px;
+  margin-top: 14px;
+}
+
 .opensea-button {
   transition: box-shadow 0.5s ease-in-out, color 300ms ease-in-out;
   padding: 8px 45px;
