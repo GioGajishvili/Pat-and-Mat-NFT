@@ -122,7 +122,8 @@ export default function Slideshow() {
             style={{
               borderRadius: "5%",
               width: "100%",
-              height: "500px",
+              height: "auto",
+              maxHeight: "500px",
             }}
           />
         </a>
@@ -136,7 +137,8 @@ export default function Slideshow() {
           style={{
             borderRadius: "5%",
             width: "100%",
-            height: "500px",
+            height: "auto",
+            maxHeight: "500px",
             position: "absolute",
             zIndex: 1,
           }}

@@ -63,10 +63,21 @@ u {
   color: #c24680;
 }
 
+.leftright-container {
+  display: flex;
+  justify-content: center;
+  gap: 195px;
+}
+
 .left-section {
-  flex: 0.55;
   height: 700px;
 }
+
+.right-section {
+  max-width: 600px;
+  height: 700px;
+}
+
 .left-section h1 {
   font-family: Jura;
   font-style: normal;
@@ -90,6 +101,26 @@ u {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.slideshow-image {
+  border-radius: 7%;
+  width: 500px;
+  height: fit-content;
+  margin-top: 26px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slideshow-container {
+  border-radius: 5%;
+  justify-content: center;
+  display: flex;
+  margin-top: 15px;
+  margin-right: 15px;
+  width: 550px;
+  height: 550px;
+  background-color: #241b2b;
 }
 
 .nft-mark {
@@ -335,9 +366,73 @@ div.panel.show {
   height: 500px;
 }
 
-.right-section {
-  max-width: 600px;
-  flex: 0.45;
-  height: 700px;
-  margin-left: 100px;
+@media (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    contain: content;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .header-text {
+    display: none;
+  }
+
+  .container-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .social-media-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-logo {
+    margin: 10px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .right-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .slideshow-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slideshow-image {
+    margin: 0;
+    width: 100%;
+    height: 111%;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textview-artworks {
+    width: 100%;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .artworks-wrapper {
+    contain: content;
+    width: 100%;
+  }
 }

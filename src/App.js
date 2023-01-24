@@ -11,7 +11,6 @@ import Marley from "./Components/Slider/PhotosNFT/marley.png";
 import Matman from "./Components/Slider/PhotosNFT/matman.png";
 import HappyGuy from "./Components/Slider/PhotosNFT/happyGuy.png";
 import Kurtanidze from "./Components/Slider/PhotosNFT/kurtanidze.png";
-import Soldier from "./Components/Slider/PhotosNFT/soldier.png";
 
 import { toggleAccordionClass } from "./Components/Accordeon/Accordeon";
 import Slideshow from "./Components/Slider/Slider";
@@ -38,17 +37,20 @@ function App(props) {
           </div>
         </div>
       </header>
-      <section className="container d-flex flex-1">
+      <section className="leftright-container container-1 d-flex flex-1">
         <div className="left-section">
-          <h1>
-            <mark className="patandmat-mark">Pat and Mat</mark> <br></br> In XXI
-            century <br></br> <mark className="nft-mark">NFT</mark> collection
-          </h1>
-          <p className="slogan">New Project with big future !</p>
-          <div className="button-container">
-            <a href="https://opensea.io/collection/patandmat" target="_blank">
-              <button className="buy">Buy</button>
-            </a>
+          <div className="header-text">
+            <h1>
+              <mark className="patandmat-mark">Pat and Mat</mark> <br></br> In
+              XXI century <br></br> <mark className="nft-mark">NFT</mark>{" "}
+              collection
+            </h1>
+            <p className="slogan">New Project with big future !</p>
+            <div className="button-container">
+              <a href="https://opensea.io/collection/patandmat" target="_blank">
+                <button className="buy">Buy</button>
+              </a>
+            </div>
           </div>
           <div className="social-media-container mt-5">
             <a href="https://www.instagram.com/patandmatnft/" target="_blank">
@@ -73,7 +75,7 @@ function App(props) {
       <div className="container">
         <h2 className="textview-artworks">Artwork of the week</h2>
         <div className="row artworks-wrapper">
-          <div className=" col-4 ">
+          <div className="col-4">
             <a
               href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/50826227598767720252728106686251813542327958622201116550483384638219738939393"
               target="_blank"
@@ -84,7 +86,7 @@ function App(props) {
               </div>
             </a>
           </div>
-          <div className=" col-4 ">
+          <div className="col-4">
             <a
               href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/50826227598767720252728106686251813542327958622201116550483384649214855217153"
               target="_blank"
@@ -95,7 +97,7 @@ function App(props) {
               </div>
             </a>
           </div>
-          <div className=" col-4 ">
+          <div className="col-4">
             <a
               href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/50826227598767720252728106686251813542327958622201116550483384654712413356033"
               target="_blank"
@@ -106,7 +108,7 @@ function App(props) {
               </div>
             </a>
           </div>
-          <div className=" col-4 ">
+          <div className="col-4">
             <a
               href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/50826227598767720252728106686251813542327958622201116550483384652513390100481"
               target="_blank"
@@ -117,7 +119,7 @@ function App(props) {
               </div>
             </a>
           </div>
-          <div className=" col-4 ">
+          <div className="col-4">
             <a
               href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/50826227598767720252728106686251813542327958622201116550483384633821692428289"
               target="_blank"
@@ -128,7 +130,7 @@ function App(props) {
               </div>
             </a>
           </div>
-          <div className=" col-4 ">
+          <div className="col-4">
             <a
               href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/50826227598767720252728106686251813542327958622201116550483384631622669172737"
               target="_blank"
@@ -158,7 +160,7 @@ function App(props) {
       <div id="team-container" className="container">
         <h2 className="textview-team">Team</h2>
         <div className="row">
-          <div className=" col-4 gio-gajishvili">
+          <div className="col-4 gio-gajishvili">
             <a
               href="https://www.instagram.com/giorgigajishvili/"
               target="_blank"
@@ -169,7 +171,7 @@ function App(props) {
               </div>
             </a>
           </div>
-          <div className=" col-4 guram-kveniashvili">
+          <div className="col-4 guram-kveniashvili">
             <a href="https://www.instagram.com/kv3no/" target="_blank">
               <div className="artwork-container">
                 <img className="nft-artwork" src={SilverBoy}></img>

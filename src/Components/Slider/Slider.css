@@ -1,26 +1,6 @@
-.slideshow-image {
-  border-radius: 7%;
-  width: 500px;
-  height: fit-content;
-  margin-top: 26px;
-  position: relative;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
 .slideshow {
   width: 500px;
   height: 500px;
-}
-
-.slideshow-container {
-  border-radius: 5%;
-  justify-content: center;
-  display: flex;
-  margin-top: 15px;
-  margin-right: 15px;
-  width: 550px;
-  height: 550px;
-  background-color: #241b2b;
 }
 
 .img-changing {
@@ -50,4 +30,12 @@
 .circles:hover {
   width: 30px;
   height: 30px;
+}
+
+@media (max-width: 900px) {
+  .slideshow {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+  }
 }
